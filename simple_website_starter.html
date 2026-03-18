@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Wise | 人に依存しない業務設計×AI</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+      line-height: 1.8;
+      color: #1b2a41;
+      background: #f4f8fc;
+    }
+    a { text-decoration: none; }
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    header {
+      background: linear-gradient(135deg, #123c73, #2563a6 55%, #4f8fd9);
+      color: white;
+      padding: 88px 20px 96px;
+    }
+    .hero {
+      max-width: 780px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.25);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: 2.8rem;
+      line-height: 1.3;
+      margin-bottom: 18px;
+      letter-spacing: 0.02em;
+    }
+    .hero p {
+      font-size: 1.05rem;
+      max-width: 720px;
+      opacity: 0.98;
+    }
+    .hero-buttons {
+      margin-top: 28px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 999px;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    .btn-primary {
+      background: white;
+      color: #123c73;
+    }
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,0.35);
+      color: white;
+      background: rgba(255,255,255,0.08);
+    }
+    main {
+      padding: 56px 0 88px;
+    }
+    section {
+      margin-bottom: 56px;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 16px;
+      color: #123c73;
+    }
+    .section-lead {
+      color: #4c5f78;
+      margin-bottom: 24px;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #dce7f3;
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(18, 60, 115, 0.08);
+    }
+    .card h3 {
+      color: #123c73;
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+    }
+    .card p {
+      color: #54657d;
+      font-size: 0.98rem;
+    }
+    .profile-box, .flow-box {
+      background: white;
+      border: 1px solid #dce7f3;
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(18, 60, 115, 0.08);
+    }
+    .flow-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .step {
+      background: #eef5fc;
+      border-radius: 16px;
+      padding: 18px;
+      border: 1px solid #d8e7f7;
+    }
+    .step strong {
+      display: block;
+      color: #123c73;
+      margin-bottom: 6px;
+    }
+    .contact {
+      background: linear-gradient(135deg, #123c73, #1e5ba0);
+      color: white;
+      border-radius: 24px;
+      padding: 34px 28px;
+      text-align: center;
+      box-shadow: 0 14px 34px rgba(18, 60, 115, 0.18);
+    }
+    .contact h2 { color: white; }
+    .contact p { opacity: 0.96; }
+    .contact-links {
+      margin-top: 18px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .contact-links a {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.22);
+      color: white;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 24px 20px 34px;
+      color: #607089;
+      font-size: 0.95rem;
+    }
+    @media (max-width: 640px) {
+      h1 { font-size: 2rem; }
+      header { padding: 64px 20px 72px; }
+      h2 { font-size: 1.45rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="hero">
+        <span class="badge">AI Wise｜人に依存しない業務設計×AI</span>
+        <h1>AIを導入して終わりではなく、<br>仕事で使える仕組みまで整えます。</h1>
+        <p>
+          AI Wiseは、業務のムダや属人化を見直し、AIと自動化を組み合わせて
+          「実際に回る仕組み」をつくるためのサポートサービスです。
+          製造業・個人事業主・中小企業向けに、わかりやすく導入支援を行います。
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">無料相談をする</a>
+          <a href="#services" class="btn btn-secondary">サービスを見る</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section id="services">
+        <h2>サービス内容</h2>
+        <p class="section-lead">現場で本当に使いやすいことを重視して、導入から運用まで支援します。</p>
+        <div class="card-grid">
+          <div class="card">
+            <h3>AI活用サポート</h3>
+            <p>ChatGPTなどのAIを活用し、文章作成、アイデア整理、業務効率化の仕組みづくりを支援します。</p>
+          </div>
+          <div class="card">
+            <h3>業務自動化・仕組み化</h3>
+            <p>スプレッドシート、GAS、各種ツール連携を使って、繰り返し業務を自動化し、作業時間を減らします。</p>
+          </div>
+          <div class="card">
+            <h3>簡易Webアプリ制作</h3>
+            <p>診断ツール、問い合わせフォーム、自動返信システムなど、目的に合わせた小さな仕組みを素早く形にします。</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>AI Wiseが大切にしていること</h2>
+        <div class="flow-box">
+          <p>
+            難しい専門用語を並べるよりも、現場でちゃんと使えることが大事です。
+            AI Wiseでは「導入したけど使われない」を避けるために、実務に合わせた設計を重視しています。
+          </p>
+          <div class="flow-steps">
+            <div class="step">
+              <strong>1. 現状整理</strong>
+              今の業務で何に時間がかかっているかを確認します。
+            </div>
+            <div class="step">
+              <strong>2. 設計</strong>
+              AIと自動化をどこに組み込むかを整理します。
+            </div>
+            <div class="step">
+              <strong>3. 仕組み化</strong>
+              誰でも使いやすい形に落とし込みます。
+            </div>
+            <div class="step">
+              <strong>4. 運用支援</strong>
+              導入後も回る状態まで整えます。
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>プロフィール</h2>
+        <div class="profile-box">
+          <p>
+            徳島を拠点に、製造業での実務経験を活かしながら、AI活用・業務効率化・仕組み化の支援を行っています。
+            単にAIを紹介するのではなく、現場に合わせて「使える形」に整えることを得意としています。
+          </p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact">
+          <h2>お問い合わせ</h2>
+          <p>
+            AI導入の相談、業務自動化、簡易Webアプリ制作など、まずはお気軽にご相談ください。
+          </p>
+          <div class="contact-links">
+            <a href="https://lin.ee/wFVwRAm" target="_blank">LINEで相談</a>
+            <a href="mailto:beetnin854@gmail.com">メールで相談</a>
+            <a href="https://www.facebook.com/share/17i267vgQr/" target="_blank">Facebook</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 AI Wise All Rights Reserved.
+  </footer>
+</body>
+</html>
