@@ -1,268 +1,160 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Wise | 人に依存しない業務設計×AI</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
-      line-height: 1.8;
-      color: #1b2a41;
-      background: #f4f8fc;
-    }
-    a { text-decoration: none; }
-    .container {
-      width: 100%;
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    header {
-      background: linear-gradient(135deg, #123c73, #2563a6 55%, #4f8fd9);
-      color: white;
-      padding: 88px 20px 96px;
-    }
-    .hero {
-      max-width: 780px;
-    }
-    .badge {
-      display: inline-block;
-      background: rgba(255,255,255,0.14);
-      border: 1px solid rgba(255,255,255,0.25);
-      padding: 8px 14px;
-      border-radius: 999px;
-      font-size: 0.9rem;
-      margin-bottom: 18px;
-    }
-    h1 {
-      font-size: 2.8rem;
-      line-height: 1.3;
-      margin-bottom: 18px;
-      letter-spacing: 0.02em;
-    }
-    .hero p {
-      font-size: 1.05rem;
-      max-width: 720px;
-      opacity: 0.98;
-    }
-    .hero-buttons {
-      margin-top: 28px;
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-    .btn {
-      display: inline-block;
-      padding: 13px 22px;
-      border-radius: 999px;
-      font-weight: bold;
-      transition: 0.2s ease;
-    }
-    .btn-primary {
-      background: white;
-      color: #123c73;
-    }
-    .btn-secondary {
-      border: 1px solid rgba(255,255,255,0.35);
-      color: white;
-      background: rgba(255,255,255,0.08);
-    }
-    main {
-      padding: 56px 0 88px;
-    }
-    section {
-      margin-bottom: 56px;
-    }
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 16px;
-      color: #123c73;
-    }
-    .section-lead {
-      color: #4c5f78;
-      margin-bottom: 24px;
-    }
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 18px;
-    }
-    .card {
-      background: white;
-      border: 1px solid #dce7f3;
-      border-radius: 20px;
-      padding: 24px;
-      box-shadow: 0 10px 30px rgba(18, 60, 115, 0.08);
-    }
-    .card h3 {
-      color: #123c73;
-      margin-bottom: 10px;
-      font-size: 1.15rem;
-    }
-    .card p {
-      color: #54657d;
-      font-size: 0.98rem;
-    }
-    .profile-box, .flow-box {
-      background: white;
-      border: 1px solid #dce7f3;
-      border-radius: 22px;
-      padding: 28px;
-      box-shadow: 0 10px 30px rgba(18, 60, 115, 0.08);
-    }
-    .flow-steps {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 14px;
-      margin-top: 18px;
-    }
-    .step {
-      background: #eef5fc;
-      border-radius: 16px;
-      padding: 18px;
-      border: 1px solid #d8e7f7;
-    }
-    .step strong {
-      display: block;
-      color: #123c73;
-      margin-bottom: 6px;
-    }
-    .contact {
-      background: linear-gradient(135deg, #123c73, #1e5ba0);
-      color: white;
-      border-radius: 24px;
-      padding: 34px 28px;
-      text-align: center;
-      box-shadow: 0 14px 34px rgba(18, 60, 115, 0.18);
-    }
-    .contact h2 { color: white; }
-    .contact p { opacity: 0.96; }
-    .contact-links {
-      margin-top: 18px;
-      display: flex;
-      justify-content: center;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-    .contact-links a {
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.22);
-      color: white;
-      padding: 12px 18px;
-      border-radius: 999px;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      padding: 24px 20px 34px;
-      color: #607089;
-      font-size: 0.95rem;
-    }
-    @media (max-width: 640px) {
-      h1 { font-size: 2rem; }
-      header { padding: 64px 20px 72px; }
-      h2 { font-size: 1.45rem; }
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ai Wise｜個人事業主・一人社長のためのAI売上導線構築</title>
+<meta name="description" content="Ai Wiseは、個人事業主・一人社長向けに、AIが働く仕組みをつくり、売上導線・SNS・LINE・資料作成・業務自動化を支援します。" />
+<meta property="og:title" content="Ai Wise｜AIが働く仕組みをつくる" />
+<meta property="og:description" content="売上を伸ばしたい。でも、これ以上忙しくなりたくない個人事業主のためのAI右腕化支援。" />
+<meta property="og:type" content="website" />
+<style>
+:root{--navy:#17233f;--navy2:#22365f;--orange:#f28a24;--orange2:#ffb36b;--cream:#faf6ef;--cream2:#fffaf3;--white:#fff;--text:#23201c;--muted:#6c655c;--line:#eadfce;--green:#06C755;--red:#e95858;--shadow:0 18px 48px rgba(23,35,63,.10)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;color:var(--text);line-height:1.85;background:var(--cream)}a{text-decoration:none;color:inherit}img{max-width:100%}.wrap{max-width:1160px;margin:auto;padding:0 22px}.center{text-align:center}.orange{color:var(--orange)}.sp{display:none}
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(23,35,63,.96);backdrop-filter:blur(10px);box-shadow:0 8px 24px rgba(0,0,0,.14)}.header-inner{max-width:1220px;margin:auto;height:68px;padding:0 22px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:1000;color:#fff;font-size:24px;letter-spacing:.02em}.logo span{color:var(--orange2)}nav{display:flex;gap:18px;align-items:center}nav a{color:rgba(255,255,255,.8);font-size:13px;font-weight:900}nav a:hover{color:#fff}.nav-cta{background:var(--orange);color:#fff!important;padding:9px 14px;border-radius:999px}
+.hero{position:relative;overflow:hidden;padding:118px 0 76px;background:radial-gradient(circle at 86% 18%,rgba(242,138,36,.28),transparent 32%),linear-gradient(135deg,#101a30,#1b2a4d 58%,#243c69);color:#fff}.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:58px 58px}.hero .wrap{position:relative;z-index:1}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}.tag{display:inline-block;background:rgba(242,138,36,.18);border:1px solid rgba(255,179,107,.48);color:#ffd4ad;padding:7px 14px;border-radius:999px;font-size:13px;font-weight:900;margin-bottom:18px}.hero h1{font-size:clamp(35px,5vw,62px);line-height:1.24;letter-spacing:.02em;margin-bottom:20px}.hero p{font-size:clamp(16px,2.1vw,20px);color:rgba(255,255,255,.84);max-width:720px}.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 24px;border-radius:12px;font-weight:1000;box-shadow:0 10px 28px rgba(0,0,0,.18);transition:.2s;border:0;cursor:pointer;font-size:15px}.btn:hover{transform:translateY(-2px)}.btn-orange{background:var(--orange);color:#fff}.btn-line{background:var(--green);color:#fff}.btn-white{background:#fff;color:var(--navy)}.btn-ghost{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.26);color:#fff}.hero-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:26px;padding:24px;box-shadow:0 20px 70px rgba(0,0,0,.22)}.mini-title{color:#ffd4ad;font-weight:1000;margin-bottom:12px}.route{display:grid;gap:10px}.route-item{background:#fff;color:var(--navy);border-radius:14px;padding:13px 16px;font-weight:1000;display:flex;justify-content:space-between;align-items:center}.route-item span{font-size:12px;color:var(--muted);font-weight:900}.route-arrow{text-align:center;color:#ffd4ad;font-weight:1000}.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}.stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.13);border-radius:16px;padding:14px}.stat b{font-size:25px;color:#fff;display:block}.stat span{font-size:12px;color:rgba(255,255,255,.7);font-weight:800}
+section{padding:82px 0}.label{font-size:13px;color:var(--orange);font-weight:1000;letter-spacing:.15em;margin-bottom:10px}.title{font-size:clamp(27px,4.2vw,42px);line-height:1.42;color:var(--navy);margin-bottom:16px}.lead{max-width:840px;color:var(--muted)}.bg-white{background:#fff}.bg-navy{background:var(--navy);color:#fff}.bg-navy .title{color:#fff}.bg-navy .lead{color:rgba(255,255,255,.74)}.grid{display:grid;gap:20px}.grid2{grid-template-columns:repeat(2,1fr)}.grid3{grid-template-columns:repeat(3,1fr)}.grid4{grid-template-columns:repeat(4,1fr)}.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:var(--shadow)}.card h3{color:var(--navy);font-size:20px;margin-bottom:10px}.card p,.card li{color:var(--muted);font-size:15px}.card ul{padding-left:1.1em}.bg-navy .card{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);box-shadow:none}.bg-navy .card h3{color:#fff}.bg-navy .card p,.bg-navy .card li{color:rgba(255,255,255,.76)}.icon{width:48px;height:48px;border-radius:14px;background:#fff0e3;color:var(--orange);display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:12px}.check-card{position:relative;overflow:hidden}.check-card:before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:var(--orange)}.problem-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:24px}.problem{background:#fff;border:1px solid var(--line);border-radius:16px;padding:15px 16px;font-weight:900;color:var(--navy);box-shadow:0 8px 24px rgba(23,35,63,.06)}.problem:before{content:"□";color:var(--orange);font-weight:1000;margin-right:8px}.quote{background:#fff7ec;border:1px solid #ffd7ad;border-radius:20px;padding:24px;font-weight:900;color:#5f3a14;margin-top:24px}.reason-box{background:linear-gradient(135deg,#fff,#fff7ed);border:2px solid #f3d2aa;border-radius:26px;padding:30px}.bad-flow{display:grid;gap:10px;margin-top:20px}.bad-flow div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px 16px;color:var(--muted);font-weight:800}.concept{display:grid;grid-template-columns:.85fr 1.15fr;gap:28px;align-items:center}.concept-visual{background:linear-gradient(135deg,var(--navy),#314b7b);border-radius:28px;padding:28px;color:#fff;box-shadow:0 18px 50px rgba(23,35,63,.18)}.big-ai{font-size:82px;font-weight:1000;line-height:1;color:#ffbe7a}.right-arm{display:grid;gap:12px;margin-top:20px}.right-arm div{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:12px;font-weight:900}.service-card{display:flex;flex-direction:column}.badge{display:inline-block;width:max-content;background:#fff0e3;color:#9b4b00;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:1000;margin-bottom:12px}.price{font-size:30px;color:var(--orange);font-weight:1000;margin:8px 0}.price small{font-size:15px;color:var(--muted)}.service-card .btn{margin-top:auto;box-shadow:none}.featured{border:2px solid var(--orange);transform:translateY(-6px);position:relative}.featured:after{content:"おすすめ";position:absolute;top:-14px;right:20px;background:var(--orange);color:#fff;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:1000}.flow-wrap{display:grid;grid-template-columns:repeat(7,1fr);gap:9px;margin-top:28px}.flow-step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;text-align:center;position:relative}.flow-step b{display:inline-flex;width:34px;height:34px;align-items:center;justify-content:center;background:var(--orange);color:#fff;border-radius:999px;margin-bottom:8px}.flow-step p{font-size:13px;color:var(--muted);font-weight:900}.future{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;font-weight:900;color:var(--navy)}.future:before{content:"✓";color:var(--orange);margin-right:8px}.case-card{min-height:210px;display:flex;flex-direction:column;justify-content:space-between}.case-card .placeholder{background:#f8f2e8;border:1px dashed #d8c7ac;border-radius:14px;padding:20px;text-align:center;color:var(--muted);font-weight:900}.faq{max-width:950px;margin:28px auto 0}.faq-item{background:#fff;border:1px solid var(--line);border-radius:16px;margin-bottom:12px;overflow:hidden;box-shadow:0 8px 24px rgba(23,35,63,.05)}.faq-q{width:100%;background:#fff;border:0;text-align:left;padding:18px 20px;font-weight:1000;color:var(--navy);font-size:16px;cursor:pointer;display:flex;justify-content:space-between;gap:12px}.faq-a{display:none;padding:0 20px 18px;color:var(--muted)}.faq-item.active .faq-a{display:block}.cta{background:linear-gradient(135deg,var(--orange),#e87614);color:#fff;text-align:center}.cta .title{color:#fff}.cta p{color:rgba(255,255,255,.9);max-width:840px;margin:0 auto}.cta .btn{margin-top:26px;background:#fff;color:var(--navy)}.law-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.62);z-index:200;padding:20px;overflow:auto}.law-modal.active{display:block}.law-box{background:#fff;max-width:900px;margin:70px auto;border-radius:22px;padding:28px;position:relative}.close{position:absolute;right:18px;top:16px;border:0;background:var(--navy);color:#fff;border-radius:999px;padding:8px 13px;font-weight:900;cursor:pointer}.law-table{width:100%;border-collapse:collapse;margin-top:18px}.law-table th,.law-table td{border:1px solid var(--line);padding:13px;text-align:left;vertical-align:top;font-size:14px}.law-table th{width:30%;background:#faf6ef;color:var(--navy)}footer{background:#0e172b;color:rgba(255,255,255,.72);padding:34px 0;text-align:center;font-size:13px}footer a{color:#ffd4ad;text-decoration:underline;margin:0 10px}.floating{position:fixed;right:18px;bottom:18px;z-index:90;background:var(--green);color:#fff;border-radius:999px;padding:13px 18px;font-weight:1000;box-shadow:0 10px 30px rgba(0,0,0,.24)}.reveal{opacity:0;transform:translateY(18px);transition:.65s}.reveal.show{opacity:1;transform:none}
+@media(max-width:960px){nav{display:none}.hero-grid,.concept,.grid2,.grid3,.grid4{grid-template-columns:1fr}.flow-wrap{grid-template-columns:repeat(2,1fr)}.problem-list{grid-template-columns:1fr}.featured{transform:none}.hero{padding-top:100px}.hero-stats{grid-template-columns:1fr}.sp{display:inline}.pc{display:none}.floating{left:16px;right:16px;text-align:center}.law-table th,.law-table td{display:block;width:100%}}
+@media(max-width:520px){.btns{display:grid}.btn{width:100%}.flow-wrap{grid-template-columns:1fr}.hero-card{padding:18px}.card{padding:22px}.title{font-size:26px}.hero h1{font-size:34px}.big-ai{font-size:64px}}
+</style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="hero">
-        <span class="badge">AI Wise｜人に依存しない業務設計×AI</span>
-        <h1>AIを導入して終わりではなく、<br>仕事で使える仕組みまで整えます。</h1>
-        <p>
-          AI Wiseは、業務のムダや属人化を見直し、AIと自動化を組み合わせて
-          「実際に回る仕組み」をつくるためのサポートサービスです。
-          製造業・個人事業主・中小企業向けに、わかりやすく導入支援を行います。
-        </p>
-        <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary">無料相談をする</a>
-          <a href="#services" class="btn btn-secondary">サービスを見る</a>
-        </div>
+<header>
+  <div class="header-inner">
+    <a class="logo" href="#top">Ai <span>Wise</span></a>
+    <nav>
+      <a href="#problem">悩み</a><a href="#concept">仕組み化</a><a href="#service">サービス</a><a href="#flow">流れ</a><a href="#faq">FAQ</a><a class="nav-cta" href="https://lin.ee/QKcl41I" target="_blank" rel="noopener">LINE相談</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="tag">個人事業主・一人社長向け｜AI売上導線構築</div>
+      <h1>売上を伸ばしたい。<br>でも、これ以上<br><span class="orange">忙しくなりたくない。</span></h1>
+      <p>Ai Wiseは、AIを「便利なツール」ではなく、24時間働く右腕として仕組み化します。営業、集客、SNS、事務、提案書、マニュアル作成をAIが支え、あなたは利益を生み出す仕事に集中できます。</p>
+      <div class="btns"><a class="btn btn-line" href="https://lin.ee/QKcl41I" target="_blank" rel="noopener">公式LINEで相談する</a><a class="btn btn-orange" href="#service">サービスを見る</a><a class="btn btn-ghost" href="#flow-image">導線イメージを見る</a></div>
+      <div class="hero-stats"><div class="stat"><b>2〜4h</b><span>1日の余裕づくりを目指す</span></div><div class="stat"><b>24h</b><span>AIが右腕として働く</span></div><div class="stat"><b>1人</b><span>でも回る売上導線へ</span></div></div>
+    </div>
+    <div class="hero-card" id="flow-image">
+      <div class="mini-title">売上導線の全体像</div>
+      <div class="route">
+        <div class="route-item">SNS発信 <span>認知</span></div><div class="route-arrow">↓</div>
+        <div class="route-item">LP・HP <span>信頼</span></div><div class="route-arrow">↓</div>
+        <div class="route-item">AI診断 <span>課題整理</span></div><div class="route-arrow">↓</div>
+        <div class="route-item">公式LINE <span>教育・関係構築</span></div><div class="route-arrow">↓</div>
+        <div class="route-item">個別相談 <span>提案</span></div><div class="route-arrow">↓</div>
+        <div class="route-item">契約・継続フォロー <span>安定化</span></div>
       </div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main>
-    <div class="container">
-      <section id="services">
-        <h2>サービス内容</h2>
-        <p class="section-lead">現場で本当に使いやすいことを重視して、導入から運用まで支援します。</p>
-        <div class="card-grid">
-          <div class="card">
-            <h3>AI活用サポート</h3>
-            <p>ChatGPTなどのAIを活用し、文章作成、アイデア整理、業務効率化の仕組みづくりを支援します。</p>
-          </div>
-          <div class="card">
-            <h3>業務自動化・仕組み化</h3>
-            <p>スプレッドシート、GAS、各種ツール連携を使って、繰り返し業務を自動化し、作業時間を減らします。</p>
-          </div>
-          <div class="card">
-            <h3>簡易Webアプリ制作</h3>
-            <p>診断ツール、問い合わせフォーム、自動返信システムなど、目的に合わせた小さな仕組みを素早く形にします。</p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>AI Wiseが大切にしていること</h2>
-        <div class="flow-box">
-          <p>
-            難しい専門用語を並べるよりも、現場でちゃんと使えることが大事です。
-            AI Wiseでは「導入したけど使われない」を避けるために、実務に合わせた設計を重視しています。
-          </p>
-          <div class="flow-steps">
-            <div class="step">
-              <strong>1. 現状整理</strong>
-              今の業務で何に時間がかかっているかを確認します。
-            </div>
-            <div class="step">
-              <strong>2. 設計</strong>
-              AIと自動化をどこに組み込むかを整理します。
-            </div>
-            <div class="step">
-              <strong>3. 仕組み化</strong>
-              誰でも使いやすい形に落とし込みます。
-            </div>
-            <div class="step">
-              <strong>4. 運用支援</strong>
-              導入後も回る状態まで整えます。
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>プロフィール</h2>
-        <div class="profile-box">
-          <p>
-            徳島を拠点に、製造業での実務経験を活かしながら、AI活用・業務効率化・仕組み化の支援を行っています。
-            単にAIを紹介するのではなく、現場に合わせて「使える形」に整えることを得意としています。
-          </p>
-        </div>
-      </section>
-
-      <section id="contact">
-        <div class="contact">
-          <h2>お問い合わせ</h2>
-          <p>
-            AI導入の相談、業務自動化、簡易Webアプリ制作など、まずはお気軽にご相談ください。
-          </p>
-          <div class="contact-links">
-            <a href="https://lin.ee/wFVwRAm" target="_blank">LINEで相談</a>
-            <a href="mailto:beetnin854@gmail.com">メールで相談</a>
-            <a href="https://www.facebook.com/share/17i267vgQr/" target="_blank">Facebook</a>
-          </div>
-        </div>
-      </section>
+<section class="bg-white" id="problem">
+  <div class="wrap reveal">
+    <div class="label">PROBLEM</div>
+    <h2 class="title">このようなお悩みはありませんか？</h2>
+    <p class="lead">刺さる専門視点は「売上導線設計のプロ × セールスコピーライター × AI業務改善コンサル」です。頑張りではなく、売れる流れと時間を生む仕組みから設計します。</p>
+    <div class="problem-list">
+      <div class="problem">毎日忙しいのに利益が増えない</div><div class="problem">売上が安定しない</div><div class="problem">SNSを続けられない</div><div class="problem">AIが気になるが活用方法が分からない</div><div class="problem">営業資料作成に何時間もかかる</div><div class="problem">何でも自分一人でやっている</div><div class="problem">家族との時間が取れない</div><div class="problem">将来への不安がある</div>
     </div>
-  </main>
+    <div class="quote">一つでも当てはまるなら、必要なのは「もっと頑張ること」ではなく、AIが働く仕組みを整えることです。</div>
+  </div>
+</section>
 
-  <footer>
-    © 2026 AI Wise All Rights Reserved.
-  </footer>
+<section id="reason">
+  <div class="wrap reveal">
+    <div class="grid grid2" style="align-items:center">
+      <div><div class="label">REASON</div><h2 class="title">なぜ頑張っているのに成果が出ないのか？</h2><p class="lead">原因は能力不足ではありません。「仕組み」がないからです。忙しくなるほど作業が増え、売上に直結する時間が削られていきます。</p></div>
+      <div class="reason-box"><h3>よくある頭打ちパターン</h3><div class="bad-flow"><div>集客はその場しのぎ</div><div>営業は毎回ゼロから説明</div><div>LINE返信は手作業</div><div>SNSは思いつき投稿</div><div>資料は毎回作り直し</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-navy" id="concept">
+  <div class="wrap reveal concept">
+    <div class="concept-visual"><div class="mini-title">Ai Wiseの考え方</div><div class="big-ai">AI</div><h3>人の代わりではなく、あなたの時間を増やすパートナー。</h3><div class="right-arm"><div>売上導線を整える</div><div>作業をテンプレ化する</div><div>AIが下書き・整理・返信を支える</div></div></div>
+    <div><div class="label">CONCEPT</div><h2 class="title">AIが働く仕組みをつくり、あなたは本来の仕事に集中する。</h2><p class="lead">AIを導入するだけでは成果は出ません。AIが自然に働く流れまで作ることで、売上・時間・利益の3つを同時に改善します。</p><div class="grid grid3" style="margin-top:22px"><div class="card"><h3>売上</h3><p>SNS、LP、LINE、個別相談までを一本の導線にします。</p></div><div class="card"><h3>時間</h3><p>返信、資料作成、投稿、マニュアル作成を短縮します。</p></div><div class="card"><h3>利益</h3><p>忙しいだけの作業を減らし、価値を生む仕事に集中します。</p></div></div></div>
+  </div>
+</section>
+
+<section class="bg-white" id="can">
+  <div class="wrap reveal">
+    <div class="label">WHAT WE DO</div><h2 class="title">Ai Wiseだからできること</h2><p class="lead">個人事業主・一人社長の売上導線と業務の両方を、AIで回る形に整えます。</p>
+    <div class="grid grid4" style="margin-top:28px"><div class="card check-card"><div class="icon">📈</div><h3>売上導線設計</h3><p>SNSからLINE、個別相談、契約までの流れを設計。</p></div><div class="card check-card"><div class="icon">🧭</div><h3>LP・HP制作</h3><p>誰に何を届けるかを整理し、伝わるページを作成。</p></div><div class="card check-card"><div class="icon">💬</div><h3>公式LINE構築</h3><p>挨拶、ステップ配信、診断、相談導線を整備。</p></div><div class="card check-card"><div class="icon">🤖</div><h3>AI診断システム</h3><p>GoogleフォームやGASで診断・レポートを自動化。</p></div><div class="card check-card"><div class="icon">✍️</div><h3>ChatGPT最適化</h3><p>投稿文、提案文、返信文を作れるプロンプトを整備。</p></div><div class="card check-card"><div class="icon">📊</div><h3>GAS自動化</h3><p>フォーム、スプレッドシート、メール送信を連携。</p></div><div class="card check-card"><div class="icon">📄</div><h3>提案資料・マニュアル</h3><p>営業資料や手順書をAIで作りやすくします。</p></div><div class="card check-card"><div class="icon">📱</div><h3>SNS運用</h3><p>投稿ネタ、構成、導線まで継続できる形にします。</p></div></div>
+  </div>
+</section>
+
+<section id="future">
+  <div class="wrap reveal">
+    <div class="label">AFTER</div><h2 class="title">お客様の未来</h2><p class="lead">目指すのは、AIを使えることではなく、事業がラクに回り始めることです。</p>
+    <div class="grid grid3" style="margin-top:26px"><div class="future">毎日2〜4時間の余裕が生まれる</div><div class="future">売上導線が完成する</div><div class="future">営業が楽になる</div><div class="future">AIが24時間働く</div><div class="future">SNSが続けやすくなる</div><div class="future">家族との時間が増える</div></div>
+  </div>
+</section>
+
+<section class="bg-white" id="service">
+  <div class="wrap reveal">
+    <div class="label">SERVICE</div><h2 class="title">サービス一覧</h2><p class="lead">最初は小さく試し、必要に応じて売上導線・業務仕組み化へ広げられます。</p>
+    <div class="grid grid3" style="margin-top:28px">
+      <div class="card service-card"><span class="badge">初回整理</span><h3>AI業務診断</h3><p>60分。現在の課題を整理し、改善レポートを作成します。</p><div class="price">5,500円</div><a class="btn btn-orange" href="https://lin.ee/QKcl41I" target="_blank" rel="noopener">申し込む</a></div>
+      <div class="card service-card"><span class="badge">小さく開始</span><h3>AIスタートパック</h3><p>ChatGPT活用、返信文、投稿文、資料作成の基本セット。</p><div class="price">29,800円</div><a class="btn btn-orange" href="https://lin.ee/QKcl41I" target="_blank" rel="noopener">相談する</a></div>
+      <div class="card service-card featured"><span class="badge">売上導線</span><h3>売上導線構築プラン</h3><p>SNS、LP、LINE、個別相談までの流れを設計・構築します。</p><div class="price">148,000円</div><a class="btn btn-orange" href="https://lin.ee/QKcl41I" target="_blank" rel="noopener">詳しく聞く</a></div>
+      <div class="card service-card"><span class="badge">業務効率化</span><h3>AI業務仕組み化プラン</h3><p>フォーム、スプレッドシート、GAS、AI文書作成を組み合わせます。</p><div class="price">298,000円</div><a class="btn btn-orange" href="https://lin.ee/QKcl41I" target="_blank" rel="noopener">相談する</a></div>
+      <div class="card service-card"><span class="badge">90日伴走</span><h3>AI右腕化プログラム</h3><p>売上導線と業務仕組み化を90日でまとめて整えます。</p><div class="price">598,000円</div><a class="btn btn-orange" href="https://lin.ee/QKcl41I" target="_blank" rel="noopener">相談する</a></div>
+      <div class="card service-card"><span class="badge">継続改善</span><h3>継続サポート</h3><p>月1回Zoom、チャット相談、改善提案、最新AI情報を提供します。</p><div class="price">29,800円<small>／月</small></div><a class="btn btn-orange" href="https://lin.ee/QKcl41I" target="_blank" rel="noopener">相談する</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="flow">
+  <div class="wrap reveal">
+    <div class="label">FLOW</div><h2 class="title">導入の流れ</h2><div class="flow-wrap"><div class="flow-step"><b>1</b><p>LINE登録</p></div><div class="flow-step"><b>2</b><p>AI業務診断</p></div><div class="flow-step"><b>3</b><p>課題整理</p></div><div class="flow-step"><b>4</b><p>個別相談</p></div><div class="flow-step"><b>5</b><p>提案</p></div><div class="flow-step"><b>6</b><p>導入</p></div><div class="flow-step"><b>7</b><p>継続改善</p></div></div>
+  </div>
+</section>
+
+<section class="bg-white" id="case">
+  <div class="wrap reveal">
+    <div class="label">CASE</div><h2 class="title">導入事例・お客様の声</h2><p class="lead">実績掲載前でも信頼感が出るよう、後から追加しやすいカード形式にしています。</p><div class="grid grid3" style="margin-top:28px"><div class="card case-card"><h3>個人事業主 A様</h3><div class="placeholder">Before／導入内容／成果／コメントを掲載予定</div></div><div class="card case-card"><h3>一人社長 B様</h3><div class="placeholder">Before／導入内容／成果／コメントを掲載予定</div></div><div class="card case-card"><h3>副業事業化 C様</h3><div class="placeholder">Before／導入内容／成果／コメントを掲載予定</div></div></div></div>
+</section>
+
+<section id="faq">
+  <div class="wrap reveal">
+    <div class="label center">FAQ</div><h2 class="title center">よくある質問</h2>
+    <div class="faq">
+      <div class="faq-item"><button class="faq-q">AI初心者でも大丈夫ですか？<span>＋</span></button><div class="faq-a">大丈夫です。専門用語を使わず、まずは業務や売上導線の整理から進めます。</div></div>
+      <div class="faq-item"><button class="faq-q">何から相談すればいいか分かりません。<span>＋</span></button><div class="faq-a">最初はAI業務診断で、売上・集客・時間のどこが詰まっているかを整理します。</div></div>
+      <div class="faq-item"><button class="faq-q">個人事業主でも依頼できますか？<span>＋</span></button><div class="faq-a">はい。個人事業主・一人社長向けに作っています。</div></div>
+      <div class="faq-item"><button class="faq-q">SNSが苦手でも使えますか？<span>＋</span></button><div class="faq-a">投稿ネタ、文章テンプレ、導線設計まで整えるので、続けやすくなります。</div></div>
+      <div class="faq-item"><button class="faq-q">LINE構築だけでも可能ですか？<span>＋</span></button><div class="faq-a">可能です。挨拶メッセージ、リッチメニュー、ステップ配信、相談導線を設計します。</div></div>
+      <div class="faq-item"><button class="faq-q">LPやHP制作も含まれますか？<span>＋</span></button><div class="faq-a">プランにより対応可能です。売上導線構築プラン以上では導線設計とページ制作を含めて提案できます。</div></div>
+      <div class="faq-item"><button class="faq-q">Googleフォームやスプレッドシートも作れますか？<span>＋</span></button><div class="faq-a">はい。診断フォーム、回答管理、メール送信、PDFレポート化などを設計できます。</div></div>
+      <div class="faq-item"><button class="faq-q">ChatGPTの使い方だけ教えてもらえますか？<span>＋</span></button><div class="faq-a">可能です。ただし、単なる使い方よりも、実際の業務で使うテンプレまで作ることをおすすめします。</div></div>
+      <div class="faq-item"><button class="faq-q">成果は保証されますか？<span>＋</span></button><div class="faq-a">成果には業種や実行量による差があります。特定の売上や利益を保証するものではありません。</div></div>
+      <div class="faq-item"><button class="faq-q">支払い方法は何がありますか？<span>＋</span></button><div class="faq-a">銀行振込、クレジットカード決済など、個別に案内します。</div></div>
+      <div class="faq-item"><button class="faq-q">オンライン対応は可能ですか？<span>＋</span></button><div class="faq-a">可能です。ZoomやLINEを使って全国対応できます。</div></div>
+      <div class="faq-item"><button class="faq-q">継続サポートは必須ですか？<span>＋</span></button><div class="faq-a">必須ではありません。導入後も改善したい場合に利用できます。</div></div>
+      <div class="faq-item"><button class="faq-q">相談前に準備するものはありますか？<span>＋</span></button><div class="faq-a">現在の悩み、使っているツール、改善したい業務が分かれば十分です。</div></div>
+      <div class="faq-item"><button class="faq-q">家族との時間を増やしたいという相談でも良いですか？<span>＋</span></button><div class="faq-a">はい。Ai Wiseでは売上だけでなく、時間の余裕を作ることも重視しています。</div></div>
+      <div class="faq-item"><button class="faq-q">まずは安いメニューから試せますか？<span>＋</span></button><div class="faq-a">はい。AI業務診断やAIスタートパックから始められます。</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact"><div class="wrap reveal"><div class="label" style="color:#fff">CONTACT</div><h2 class="title">まずはAI業務診断で、現在の課題を整理してみませんか？</h2><p>事業を大きく変えるのに、もっと頑張る必要はありません。必要なのは、AIが働く仕組みです。</p><a class="btn" href="https://lin.ee/QKcl41I" target="_blank" rel="noopener">公式LINEで相談する</a></div></section>
+</main>
+
+<footer><div class="wrap"><strong>Ai Wise ／ 瀬川 友和</strong><br>AIが働く仕組みをつくり、あなたは本来の仕事に集中する。<br><br><a href="#" onclick="openLaw();return false;">特定商取引法に基づく表記</a><a href="https://lin.ee/QKcl41I" target="_blank" rel="noopener">公式LINE</a><br>© 2026 Ai Wise. All rights reserved.</div></footer>
+<a class="floating" href="https://lin.ee/QKcl41I" target="_blank" rel="noopener">LINEで相談する</a>
+
+<div class="law-modal" id="lawModal"><div class="law-box"><button class="close" onclick="closeLaw()">閉じる</button><h2 class="title">特定商取引法に基づく表記</h2><table class="law-table"><tr><th>販売事業者</th><td>Ai Wise</td></tr><tr><th>運営責任者</th><td>瀬川 友和</td></tr><tr><th>所在地</th><td>請求があった場合、遅滞なく開示いたします。</td></tr><tr><th>電話番号</th><td>請求があった場合、遅滞なく開示いたします。</td></tr><tr><th>メールアドレス</th><td>aiwise202602@gmail.com</td></tr><tr><th>販売価格</th><td>各サービスページ、見積書、または個別案内に記載します。</td></tr><tr><th>商品代金以外の必要料金</th><td>銀行振込手数料、通信費等はお客様負担となります。</td></tr><tr><th>支払方法</th><td>銀行振込、クレジットカード決済、その他個別に定める方法。</td></tr><tr><th>サービス提供時期</th><td>決済確認後、個別に合意した日程にて提供します。</td></tr><tr><th>キャンセル・返金</th><td>サービスの性質上、提供開始後の返金は原則不可です。提供前のキャンセルは個別に協議します。</td></tr><tr><th>表現および商品に関する注意書き</th><td>本サービスの効果には個人差・事業環境差があります。必ずしも特定の成果を保証するものではありません。</td></tr></table></div></div>
+<script>
+document.querySelectorAll('.faq-q').forEach(btn=>btn.addEventListener('click',()=>{btn.parentElement.classList.toggle('active')}));
+function openLaw(){document.getElementById('lawModal').classList.add('active')}
+function closeLaw(){document.getElementById('lawModal').classList.remove('active')}
+document.getElementById('lawModal').addEventListener('click',e=>{if(e.target.id==='lawModal')closeLaw()});
+const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})},{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
 </body>
 </html>
